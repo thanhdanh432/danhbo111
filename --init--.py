@@ -4,8 +4,8 @@ from gpiozero import LED, OutputDevice
 class LightFanControlSkill(MycroftSkill):
     def __init__(self):
         super().__init__()
-        self.light = LED(17)  # Chân GPIO mà đèn được kết nối
-        self.fan = OutputDevice(18)  # Chân GPIO mà quạt được kết nối
+        self.light = LED(27)  # Chân GPIO mà đèn được kết nối
+        self.fan = OutputDevice(22)  # Chân GPIO mà quạt được kết nối
 
     def initialize(self):
         # Đăng ký skill với Mycroft
